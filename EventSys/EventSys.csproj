@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{292B1F8E-D3C0-4719-A561-DF8A95FA3258}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EventSys</RootNamespace>
+    <AssemblyName>EventSys</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.6.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="frmAnalyseRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalyseRevenue.Designer.cs">
+      <DependentUpon>frmAnalyseRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnalyseVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalyseVenue.Designer.cs">
+      <DependentUpon>frmAnalyseVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelBooking.Designer.cs">
+      <DependentUpon>frmCancelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelEvent.Designer.cs">
+      <DependentUpon>frmCancelEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMakeBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMakeBooking.Designer.cs">
+      <DependentUpon>frmMakeBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUpCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUpCustomer.Designer.cs">
+      <DependentUpon>frmSignUpCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTopUp.Designer.cs">
+      <DependentUpon>frmTopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateEvent.Designer.cs">
+      <DependentUpon>frmUpdateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEvent.Designer.cs">
+      <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteVenue.Designer.cs">
+      <DependentUpon>frmDeleteVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateVenue.Designer.cs">
+      <DependentUpon>frmUpdateVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegVenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegVenue.Designer.cs">
+      <DependentUpon>frmRegVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Venue.cs" />
+    <EmbeddedResource Include="frmAddEvent.resx">
+      <DependentUpon>frmAddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnalyseRevenue.resx">
+      <DependentUpon>frmAnalyseRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnalyseVenue.resx">
+      <DependentUpon>frmAnalyseVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelBooking.resx">
+      <DependentUpon>frmCancelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelEvent.resx">
+      <DependentUpon>frmCancelEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteVenue.resx">
+      <DependentUpon>frmDeleteVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMakeBooking.resx">
+      <DependentUpon>frmMakeBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUpCustomer.resx">
+      <DependentUpon>frmSignUpCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTopUp.resx">
+      <DependentUpon>frmTopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateEvent.resx">
+      <DependentUpon>frmUpdateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateVenue.resx">
+      <DependentUpon>frmUpdateVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegVenue.resx">
+      <DependentUpon>frmRegVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headphones-3435888_19201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\RevenueAnal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\RevenueAnal2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\headphones-3435888_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headphones-3435888_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Revanal2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ticketsSold.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

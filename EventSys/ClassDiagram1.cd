@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="EventSys.Booking" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="getCustID" Hidden="true" />
+      <Method Name="getEventID" Hidden="true" />
+      <Method Name="getID" Hidden="true" />
+      <Method Name="getTickets" Hidden="true" />
+      <Method Name="getTotal" Hidden="true" />
+      <Method Name="setCustID" Hidden="true" />
+      <Method Name="setEventID" Hidden="true" />
+      <Method Name="setID" Hidden="true" />
+      <Method Name="setTickets" Hidden="true" />
+      <Method Name="setTotal" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEIBAAAkgAAAQACAAAASIAAgBAAAAEIAAMAAgAAACgQ=</HashCode>
+      <FileName>Booking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventSys.Customer">
+    <Position X="11" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="getBal" Hidden="true" />
+      <Method Name="getContactNo" Hidden="true" />
+      <Method Name="getEmail" Hidden="true" />
+      <Method Name="getForename" Hidden="true" />
+      <Method Name="getID" Hidden="true" />
+      <Method Name="getPassword" Hidden="true" />
+      <Method Name="getSurname" Hidden="true" />
+      <Method Name="setBal" Hidden="true" />
+      <Method Name="setContactNo" Hidden="true" />
+      <Method Name="setCustDetails" Hidden="true" />
+      <Method Name="setEmail" Hidden="true" />
+      <Method Name="setForename" Hidden="true" />
+      <Method Name="setID" Hidden="true" />
+      <Method Name="setPassword" Hidden="true" />
+      <Method Name="setSurname" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAMAAAgAABmgAEEcAQAIAACAECCgQACAAgQACoA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventSys.Event">
+    <Position X="0.5" Y="1.25" Width="4.25" />
+    <Members>
+      <Method Name="getDate" Hidden="true" />
+      <Method Name="getDesc" Hidden="true" />
+      <Method Name="getID" Hidden="true" />
+      <Method Name="getNextID" Hidden="true" />
+      <Method Name="getPrice" Hidden="true" />
+      <Method Name="getStatus" Hidden="true" />
+      <Method Name="getTickets" Hidden="true" />
+      <Method Name="getTime" Hidden="true" />
+      <Method Name="getTitle" Hidden="true" />
+      <Method Name="getType" Hidden="true" />
+      <Method Name="getVenueId" Hidden="true" />
+      <Method Name="setDate" Hidden="true" />
+      <Method Name="setDesc" Hidden="true" />
+      <Method Name="setID" Hidden="true" />
+      <Method Name="setPrice" Hidden="true" />
+      <Method Name="setStatus" Hidden="true" />
+      <Method Name="setTickets" Hidden="true" />
+      <Method Name="setTime" Hidden="true" />
+      <Method Name="setTitle" Hidden="true" />
+      <Method Name="setType" Hidden="true" />
+      <Method Name="setVenueID" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EQQBAQAEQAAIhEGIIAAQRRAEARABBGgIAAAAAYESCkA=</HashCode>
+      <FileName>Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventSys.Type" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="getID" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="setID" Hidden="true" />
+      <Method Name="setName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAIAAAAAAAAAAAAABAgAAEAAAASgA=</HashCode>
+      <FileName>Type.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventSys.Venue">
+    <Position X="5.25" Y="1.25" Width="3" />
+    <Members>
+      <Method Name="getCapacity" Hidden="true" />
+      <Method Name="getContactNo" Hidden="true" />
+      <Method Name="getEmail" Hidden="true" />
+      <Method Name="getID" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getPassword" Hidden="true" />
+      <Method Name="getStatus" Hidden="true" />
+      <Method Name="getStreet" Hidden="true" />
+      <Method Name="getTown" Hidden="true" />
+      <Method Name="setCapacity" Hidden="true" />
+      <Method Name="setContactNo" Hidden="true" />
+      <Method Name="setEmail" Hidden="true" />
+      <Method Name="setID" Hidden="true" />
+      <Method Name="setName" Hidden="true" />
+      <Method Name="setPassword" Hidden="true" />
+      <Method Name="setStatus" Hidden="true" />
+      <Method Name="setStreet" Hidden="true" />
+      <Method Name="setTown" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIyAAEIAQAAAAAqgIAKYBAgAgAAEBmTAAAoEAkABioI=</HashCode>
+      <FileName>Venue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
